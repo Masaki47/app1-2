@@ -1,0 +1,11 @@
+Rails.application.routes.draw do
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  resources :books
+  root :to => 'books#top'
+  root :to => 'books#index'
+  root :to => 'books#create'
+  root :to => 'books#show'
+  root :to => 'books#edit'
+  root :to => 'books#update'
+  root :to => 'books#destroy'
+end
